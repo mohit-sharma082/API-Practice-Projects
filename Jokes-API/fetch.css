@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-body{
+body {
     width: 100vw;
     background-color: rgb(173, 173, 173);
     display: flex;
@@ -17,10 +17,12 @@ body{
     justify-content: center;
     align-items: center;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.container{
+
+.container {
     padding: 30px 15px;
     margin-top: 10vh;
     width: 90vw;
@@ -28,14 +30,16 @@ body{
     border-radius: 10px;
     box-shadow: 2px 2px 20px gray;
     display: grid;
-    grid-template-columns: repeat(auto-fit,250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     row-gap: 25px;
     justify-content: space-evenly;
 }
-p{
+
+p {
     width: 70%;
 }
-.card{
+
+.card {
     cursor: pointer;
     height: 350px;
     border-radius: 7px;
@@ -44,7 +48,9 @@ p{
     transform-style: preserve-3d;
     transition: 600ms;
 }
-.front,.back{
+
+.front,
+.back {
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -54,17 +60,14 @@ p{
     height: 100%;
     backface-visibility: hidden;
 }
-.back{
+
+.back {
     color: #fff;
     background-color: #734dcc;
     transform: rotateY(180deg);
 }
-.card:hover{
+
+.card:hover {
     transform: rotateY(180deg);
     border: 1px solid #734dcc;
 }
-
-
-
-
-
